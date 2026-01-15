@@ -77,7 +77,7 @@ def yolo_onnx_detect(sess, img, input_name, conf_thres=0.5):
     return [boxes[i] for i in keep]
 
 # ========= MAIN LOOP ========= #
-vid = cv2.VideoCapture(0)
+vid = cv2.VideoCapture(2)
 captured = False
 
 while True:
